@@ -1,0 +1,45 @@
+{
+    "proje_bilgileri": {
+        "proje_adi": "Gastrointestinal Lezyon Segmentasyonu - U-Net Modeli",
+        "veri_seti": "Kvasir-SEG",
+        "goruntu_sayisi": 1000,
+        "egitim_goruntu": 700,
+        "validation_goruntu": 150,
+        "test_goruntu": 150,
+        "goruntu_boyutu": "256x256",
+        "model_mimari": "U-Net (Gelişmiş - Batch Norm + Dropout)",
+        "optimizer": "Adam",
+        "learning_rate": 0.0001,
+        "loss_function": "Dice Loss",
+        "batch_size": 8
+    },
+    "egitim_bilgileri": {
+        "epoch_sayisi": 50,
+        "final_egitim_loss": 0.06452788412570953,
+        "final_validation_loss": 0.2524525821208954,
+        "final_egitim_dice": 0.9353576898574829,
+        "final_validation_dice": 0.7480089664459229,
+        "egitim_suresi_dakika": 315.2924823602041
+    },
+    "performans_metrikleri": {
+        "IoU": 0.6873824596405029,
+        "Dice": 0.7769617438316345,
+        "Sensitivity": 0.791428804397583,
+        "Specificity": 0.9738696217536926,
+        "Precision": 0.8185203075408936,
+        "Accuracy": 0.9388923048973083
+    },
+    "detayli_istatistikler": {
+        "iou_analizi": {
+            "ortalama": 0.6873824596405029,
+            "std_sapma": 0.25948646664619446,
+            "min": 0.0,
+            "max": 0.9709118604660034
+        }
+    },
+    "klinik_iliskisi": {
+        "teshis_destek": "Gastrointestinal endoskopi görüntülerinde otomatik polip segmentasyonu",
+        "klinik_onem": "Kolorektal kanser erken teşhisi için polip tespiti",
+        "kullanım_amaci": "Endoskopistlere gerçek zamanlı karar destek sistemi"
+    }
+}
